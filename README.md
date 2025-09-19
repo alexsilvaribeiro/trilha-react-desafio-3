@@ -68,15 +68,15 @@ npx json-server --watch db.json --port 3001
 ## 📸 Exemplo de Uso
 
 ### Página principal
-![Screenshot busca](./assets/home.png)
+
+![Página principal](./src/assets/home.png)
 
 ### Página de login
-![Screenshot perfil](./assets/login.png)
+
+![Página de login](./src/assets/login.png)
 
 ### Página de feed
-![Screenshot perfil](./assets/feed.png)
----
+
+## ![Página de feed](./src/assets/feed.png)
 
 👤 Autor: [@alexsilvaribeiro](https://github.com/alexsilvaribeiro)
-
-
