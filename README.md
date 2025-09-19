@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 🚀 Projeto React - Desenvolvendo a Tela de Cadastro da Plataforma Dio com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido em **React** com foco em simular uma plataforma de aprendizado com autenticação e feed de conteúdo.
 
-## Available Scripts
+## 📌 Funcionalidades
 
-In the project directory, you can run:
+* **Home**: Página inicial com informações sobre a plataforma e chamada para ação.
+* **Login**: Página de autenticação de usuário.
+* **Feed**: Página com cards de conteúdo e ranking dos 5 usuários mais ativos da semana.
 
-### `npm start`
+## 🛠️ Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [React](https://reactjs.org/)
+* [React Router DOM](https://reactrouter.com/)
+* [Styled Components](https://styled-components.com/)
+* [Axios](https://axios-http.com/) (para chamadas HTTP)
+* [JSON Server](https://github.com/typicode/json-server) (simulação de API)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Estrutura do Projeto
 
-### `npm test`
+```
+src/
+  ├── assets/          # Imagens e ícones
+  ├── components/      # Componentes reutilizáveis (Header, Button, Card, UserInfo)
+  ├── pages/           # Páginas principais (Home, Login, Feed)
+  ├── styles/          # Estilos globais e temas
+  └── App.jsx          # Definição das rotas
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚡ Rotas da Aplicação
 
-### `npm run build`
+* `/` → Página **Home**
+* `/login` → Página **Login**
+* `/feed` → Página **Feed**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ▶️ Como Rodar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone o repositório:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/alexsilvaribeiro/trilha-react-desafio-3.git
+```
 
-### `npm run eject`
+Entre na pasta do projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd nome-do-projeto
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Instale as dependências:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Inicie o servidor:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+(Opcional) Para rodar a API fake com JSON Server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npx json-server --watch db.json --port 3001
+```
 
-### Code Splitting
+## 📸 Exemplo de Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Página principal
+![Screenshot busca](./assets/home.png)
 
-### Analyzing the Bundle Size
+### Página de login
+![Screenshot perfil](./assets/login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Página de feed
+![Screenshot perfil](./assets/feed.png)
+---
 
-### Making a Progressive Web App
+👤 Autor: [@alexsilvaribeiro](https://github.com/alexsilvaribeiro)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
